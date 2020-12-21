@@ -1,0 +1,32 @@
+.titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4em;
+    padding-top: 2em;
+    text-align: center;
+}
+.datos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    padding-left: 4em;
+}
+.seleccion{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    padding-left: 4em;
+}
+.parrafo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    padding-left: 4em;
+}
+.parrafo_{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    padding-left: 4em;
+    padding-bottom: 4em;
+}
+.boton {
+    text-align: center;
+    padding-bottom: 4em;
+}
+

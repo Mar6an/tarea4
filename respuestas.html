@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Respuesta</title>
+</head>
+<body>
+<h1>La información que enviaste desde tu formulario es la siguiente:</h1>
+
+<table border="1" align=center width="226">
+  <tr>
+    <th align="center">Nombre campo</th>
+    <th align="center">Valor campo</th>
+  </tr>
+<script language="javascript">
+
+document.writeln('<tr>' + location.search + '</tr>');
+
+var args = location.search.substr(1).split('&');
+for (var i = 0; i < args.length; ++i) {
+  var parts = args[i].split('=');
+  if (parts != null) {
+    var field = parts[0];
+    var value = parts[1];
+    if (value == null) {
+      value = "null"
+    }
+    else {
+    
+      value = '"' + decodeURI(value.replace(/\+/g, ' ')) + '"';
+    
+    }
+
+    document.writeln('<tr><td align="center">' + field + '</td>');
+    document.writeln('<td align="center">' + value + '</td></tr>');
+  }
+}
+</script>
+</table>
+</body>
+</html>
